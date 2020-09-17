@@ -34,7 +34,35 @@ li{
     padding-top:8px;
 }
 
+#menu{
+    position:fixed;
+    margin-left:0.5%;
+}
+
 body{
     background-color:black;
     color:white;
+}
+
+article {
+    background-color: #0f0f0f;
+    padding-left: 12%;
+    padding-right: 12%;
+    min-height: 500px;
+}
+
+h2{
+    color:#015377;
+    text-align:center;
+}
+
+.text{
+    width:40%;
+    float:left;
+}
+
+.code_terminal{
+    width:40%;
+    float:left;
+    margin-left:20%;
 }
