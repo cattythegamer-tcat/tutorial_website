@@ -19,7 +19,7 @@
 }
 
 .icon{
-    height:32px;
+    height:24px;
 }
 
 ul{
@@ -28,12 +28,15 @@ ul{
 
 li{
     background-color:#152028;
-    width:40px;
-    height:40px;
-    padding-left:8px;
-    padding-top:8px;
+    width:30px;
+    height:30px;
+    padding-left:6px;
+    padding-top:6px;
 }
 
+li:hover{
+    background-color:#ba2343;
+}
 #menu{
     position:fixed;
 }
