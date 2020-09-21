@@ -24,6 +24,8 @@
 
 ul{
     list-style:none;
+    margin:0;
+    padding:0;
 }
 
 li{
@@ -37,13 +39,15 @@ li{
 li:hover{
     background-color:#ba2343;
 }
+
 #menu{
     position:fixed;
+    margin-left:3%;
 }
 
 body{
     background-color:black;
-    color:white;
+    color:#FFFFF0;
 }
 
 article {
