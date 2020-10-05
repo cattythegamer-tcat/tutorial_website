@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\fonts",
+    "\\fonts\\neo_latina",
+    "\\images",
+    "\\images\\backgrounds"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\fonts\\neo_latina\\neo-latina-demo-FFP.ttf",
   "PreviewInSolutionExplorer": false
 }

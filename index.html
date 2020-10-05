@@ -41,32 +41,32 @@
 
 				<div class="text">
 					<p>
-						This website was built to teach Y11 about the different Python Printing techniques.
+						This website was built to teach Y11 about the different Python Printing techniques. The following button will display the first part of the example code.
 					</p>
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA1P1()">View Code</button></div><br />
+					<div class="view"><button type="button" class="view_button" onclick="viewA1P1()">View Input</button></div><br />
 
 					<p>
-						It will cover printing, inputs, stylized printing, custom colors and some history.
+						It will cover printing, inputs, stylized printing, custom colors and some history. The following button will display the second part of the example code.
 					</p>
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA1P2()">View Code</button></div><br />
+					<div class="view"><button type="button" class="view_button" onclick="viewA1P2()">View If/else</button></div><br />
 
 					<p>
-						Python printing was made as a Y12 DTM project.
+						Python printing was made as a Y12 DTM project. The following button will show the completed version of the example code.
 					</p>
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA1P3()">View Code</button></div><br />
+					<div class="view"><button type="button" class="view_button" onclick="viewA1P3()">View Output</button></div><br />
 				</div>
                 <div class="code_terminal">
-                    <h4 class="version">Python 3.8.5</h4>
-                    <h4 class="date">14/09/20</h4>
+					<b class="version">Python 3.8.5</b>
+					<b class="date">14/09/20</b>
 
                     <p class="code" id="terminalA">
                         <span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
                     </p>
 
-                    <div class="copy_code"><!-- Copy code button--></div>
+                    <div class="copy_code"><button type="button" class="view_button" onclick="copyCodeA()">Copy Code</button></div>
                     <div class="fullscreen"><!-- Run mode--></div>
                 </div>
 			</article>
@@ -84,38 +84,76 @@
 						of your choosing.
 					</p>
 
+					<div class="view"><button type="button" class="view_button" onclick="viewA2P1()">View Print</button></div><br />
+
 					<p>
 						When run, it will display the chosen text in the terminal.
 					</p>
 
-					<div class="view_button"><!--view button code--></div>
 				</div>
 				<div class="code_terminal">
-					<h4 class="version">Python 3.8.5</h4>
-					<h4 class="date">14/09/20</h4>
+					<b class="version">Python 3.8.5</b>
+					<b class="date">14/09/20</b>
 
 					<p class="code" id="terminalB">
 						<span class="comment"># Basic printing</span><br /><br />
-						<span class="exec">print</span>(<span class="string">"Hello World!"</span>)
 					</p>
 
-					<div class="copy_code"><!-- Copy code button--></div>
+					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeB()">Copy Code</button></div>
 					<div class="fullscreen"><!-- Run mode--></div>
 				</div>
 			</article>
 		</main>
-	 
 
-	 
+		<input type="text" value="bello World" id="copying"> <!-- Copy and paste code, no touchy-->
 
 	</body> 
 
 </html>
 
 <script>
+	var A1P = 0;
+	var A2P = 0;
+	var A3P = 0;
+	var A4P = 0;
+	var A5P = 0;
+	var A6P = 0;
+
+	function copyCodeA() {
+        var copyText = document.getElementById("copying");
+
+		switch (A1P) {
+			case 0:
+				copyText.value = '#demo';
+				break;
+
+			case 1:
+                copyText.value = 'pan_of_the_cake = int(input("am: "))';
+				break;
+
+            case 2:
+                copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: pass;`;
+				break;
+
+            case 3:
+                copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: print("Thats a lot'a pancakes");`;
+				break;
+
+			default:
+				copyText.value = '';
+				break;
+        }
+
+		copyText.select();
+		copyText.setSelectionRange(0, 99999);
+
+        document.execCommand("copy");
+    }
+
     function viewA1P1() {
         document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
                         <span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />`;
+		A1P = 1;
     }
 
     function viewA1P2() {
@@ -123,6 +161,7 @@
 						<span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />
 						<span class="function">if </span><span class="variable">pan_of_the_cake </span> > 1000:<br />
 						<span class="function">&emsp;&emsp;pass</span>`;
+		A1P = 2;
     }
 
 	function viewA1P3() {
@@ -130,5 +169,35 @@
 						<span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />
 						<span class="function">if </span><span class="variable">pan_of_the_cake </span> > 1000:<br />
 						<span class="exec">&emsp;&emsp;print</span>(<span class="string">"Thats a lot'a pancakes"</span>)`;
+		A1P = 3;
+	}
+
+	function copyCodeB() {
+		var copyText = document.getElementById("copying");
+
+		switch (A2P) {
+			case 0:
+				copyText.value = '# Basic printing';
+				break;
+
+			case 1:
+				copyText.value = 'print("hello world")';
+				break;
+
+			default:
+				copyText.value = '';
+				break;
+		}
+
+		copyText.select();
+		copyText.setSelectionRange(0, 99999);
+
+		document.execCommand("copy");
+    }
+
+    function viewA2P1() {
+        document.getElementById("terminalB").innerHTML = `<span class="comment"># Basic printing</span><br /><br />
+						<span class="exec">print</span>(<span class="string">"Hello World!"</span>)`;
+        A2P = 1;
     }
 </script>

@@ -52,6 +52,8 @@ li:hover{
 #menu{
     position:fixed;
     margin-left:3%;
+    padding-top:100px;
+    z-index: 100;
 }
 
 body{
@@ -63,7 +65,7 @@ body{
 article {
     padding-left: 12%;
     padding-right: 12%;
-    min-height: 500px;
+    height: 600px;
 }
 
 h2 {
@@ -87,6 +89,7 @@ h2 {
     border-radius: 3px;
     border-width: 2px;
     border-style: solid;
+    height: 400px;
 }
 
 #title{
@@ -117,16 +120,18 @@ i{
     font-size:80%;
 }
 
-.version{
-    float:left;
+.version {
+    float: left;
+    color: #BA2343;
 }
 
-.date{
-    float:right;
+.date {
+    float: right;
+    color: #BA2343;
 }
 
 .code{
-    padding-top:50px;
+    padding-top:30px;
 }
 
 .view{
@@ -139,9 +144,20 @@ i{
     border-width: 0;
     border-radius: 5px;
     transition-duration: 0.4s;
+    min-width: 100px;
+    min-height: 20px;
 }
 
 .view_button:hover {
     background-color: white;
     color: #BA2343;
+}
+
+#copying{
+    z-index: -100;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    left: -1000%;
 }
