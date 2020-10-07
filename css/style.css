@@ -132,6 +132,7 @@ i{
 
 .code{
     padding-top:30px;
+    width:400px;
 }
 
 .view{
@@ -160,4 +161,17 @@ i{
     border-color: transparent;
     position: absolute;
     left: -1000%;
+}
+
+.top_border {
+    position: absolute;
+    margin-left: 25%;
+    width: 2.5%;
+}
+
+.bottom_border {
+    position: absolute;
+    margin-top: 400px;
+    width: 2.5%;
+    transform: rotate(180deg);
 }
