@@ -214,6 +214,7 @@ i{
     .code_terminal {
         float: left;
         margin-top: 50px;
+        width: 95%;
     }
     
     #title {
@@ -226,6 +227,10 @@ i{
 
     #main_image {
         height:200px;
+    }
+
+    .text {
+        width: 100%;
     }
 }
 
