@@ -202,6 +202,33 @@ i{
     }
 }
 
+@media only screen and (max-width:870px) {
+    article {
+        height: 1000px;
+    }
+
+    #menu {
+        margin-left:0px;
+    }
+
+    .code_terminal {
+        float: left;
+        margin-top: 50px;
+    }
+    
+    #title {
+        padding-top:5px;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    #main_image {
+        height:200px;
+    }
+}
+
 .fullscreen {
     float:left;
     margin-left: 25px;
