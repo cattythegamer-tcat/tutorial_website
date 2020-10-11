@@ -20,10 +20,9 @@
 					<li><a href="index.html"><img src="images/icons/home.png" class="icon" /></a></li>
 					<li><a href="index.html#info"><img src="images/icons/info.png" class="icon" /></a></li>
 					<li><a href="index.html#basic"><img src="images/icons/print.png" class="icon" /></a></li>
-					<li><a href="index.html"><img src="images/icons/input.png" class="icon" /></a></li>
-					<li><a href="index.html"><img src="images/icons/scroll.png" class="icon" /></a></li>
+					<li><a href="index.html#input"><img src="images/icons/input.png" class="icon" /></a></li>
+					<li><a href="index.html#scroll"><img src="images/icons/scroll.png" class="icon" /></a></li>
 					<li><a href="index.html"><img src="images/icons/palette.png" class="icon" /></a></li>
-					<li><a href="index.html"><img src="images/icons/teach.png" class="icon" /></a></li>
 				</ul>
 			</div>
 		<main>
@@ -148,6 +147,88 @@
 					<div class="fullscreen"><a href="fullscreen_a3.html"><button type="button" class="view_button">Fullscreen</button></a></div>
 				</div>
 			</article>
+
+			<article id="scroll">
+				<h2><b>Scroll'n |</b> <i>Stylize your printing</i></h2>
+
+				<div class="text">
+
+					<img src="images/icons/border.png" class="top_border" />
+					<img src="images/icons/border.png" class="bottom_border" />
+
+					<p>
+						If you want to go the extra mile, try stylized scrolling. To do this, you first type <span class="function">import</span> time. Then, you add <span class="function">for </span> l <span class="function">in </span>
+						<span class="string">"VALUE"</span>:, changing VALUE to the desired output.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA4P1()">View Import</button></div><br />
+
+					<p>
+						Inside the <span class="function">for</span> loop, type <span class="exec">print</span>(l, end=<span class="string">""</span>). This will print out individual letters, without goint to a new line each time.
+						However, this will only work on python version 3 or higher.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA4P2()">View Print</button></div><br />
+
+					<p>
+						Lastly, while still inside the <span class="function">for</span> loop, type time.<span class="exec">sleep</span>(<span class="exec">0.1</span>). You can change the number to adjust the speed of the scrolling, in seconds.
+						Keep in mind, this should only be used in certain cases, as an entire program using this would make navigating take ages.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA4P3()">View Time</button></div><br />
+				</div>
+				<div class="code_terminal">
+					<b class="version">Python 3.8.5</b>
+					<b class="date">14/09/20</b>
+
+					<p class="code" id="terminalD">
+						<span class="comment"># Scroll</span><br /><br />
+					</p>
+
+					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeD()">Copy Code</button></div>
+					<div class="fullscreen"><a href="fullscreen_a4.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				</div>
+			</article>
+
+			<article id="color">
+				<h2><b>Color |</b> <i>Change your printing color :O</i></h2>
+
+				<div class="text">
+
+					<img src="images/icons/border.png" class="top_border" />
+					<img src="images/icons/border.png" class="bottom_border" />
+
+					<p>
+						To change the color of the output, first <span class="function">import </span> sys. This will give you access to the python core programs.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA5P1()">View Sys</button></div><br />
+
+					<p>
+						After this, type sys.stdout.shell.write(<span class="string">"OUTPUT"</span>, <span class="string">"STRING"</span>), changing OUTPUT to whatever you want. This will
+						print the output as green.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA5P2()">View write</button></div><br />
+
+					<p>
+						The other available colors are red and yellow, entered by changing <span class="string">"STRING"</span> to <span class="string">"COMMENT"</span> or <span class="string">"KEYWORD"</span> respectively.
+</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA4P3()">View Alt</button></div><br />
+				</div>
+				<div class="code_terminal">
+					<b class="version">Python 3.8.5</b>
+					<b class="date">14/09/20</b>
+
+					<p class="code" id="terminalD">
+						<span class="comment"># Scroll</span><br /><br />
+					</p>
+
+					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeD()">Copy Code</button></div>
+					<div class="fullscreen"><a href="fullscreen_a4.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				</div>
+			</article>
 		</main>
 
 		<input type="text" value="" id="copying"> <!-- Copy and paste code, no touchy-->
@@ -169,7 +250,7 @@
 
 		switch (A1P) {
 			case 0:
-				copyText.value = '#demo';
+				copyText.value = '# demo';
 				break;
 
 			case 1:
@@ -295,6 +376,62 @@
 						&emsp;&emsp;<span class="variable">cats</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"Amount of cats: "</span>))<br />
 						<span class="function">except</span>:<br />
 						&emsp;&emsp;<span class="variable">cats</span> = <span class="exec">0</span><br />`;
+        A3P = 3;
+	}
+
+    function copyCodeD() {
+        var copyText = document.getElementById("copying");
+
+        switch (A4P) {
+            case 0:
+                copyText.value = '# Scroll';
+                break;
+
+            case 1:
+                copyText.value = 'cats = input("Amount of cats: ")';
+                break;
+
+            case 2:
+                copyText.value = `cats = int(input("Amount of cats: "))`;
+                break;
+
+            case 3:
+                copyText.value = `try: cats = int(input("Amount of cats: ")); except: cats = 0;`;
+                break;
+
+            default:
+                copyText.value = '';
+                break;
+        }
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        document.execCommand("copy");
+    }
+
+    function viewA4P1() {
+        document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll</span><br /><br />
+						<span class="function">import </span>time<br /><br />
+						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
+						&emsp;&emsp;<span class="function">pass</span>`;
+        A3P = 1;
+    }
+
+    function viewA4P2() {
+        document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll</span><br /><br />
+						<span class="function">import </span>time<br /><br />
+						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
+						&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)`;
+        A3P = 2;
+    }
+
+    function viewA4P3() {
+        document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll</span><br /><br />
+						<span class="function">import </span>time<br /><br />
+						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
+						&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)<br />
+						&emsp;&emsp;time.<span class="exec">sleep</span>(<span class="exec">0.1</span>)`;
         A3P = 3;
     }
 </script>

@@ -109,11 +109,12 @@ h2 {
     width:100%;
 }
 
-#info {
-    background-color: #0F0F0F;
-}
 
 #basic {
+    background-color: #181818;
+}
+
+#scroll {
     background-color: #181818;
 }
 

@@ -1,0 +1,1 @@
+Fixed bug where the code wasn't showing up in the terminal. I forgot to change the terminal id from terminalB to terminalC.
