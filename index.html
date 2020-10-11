@@ -18,8 +18,8 @@
 		<div id="menu">
 				<ul>
 					<li><a href="index.html"><img src="images/icons/home.png" class="icon" /></a></li>
-					<li><a href="index.html"><img src="images/icons/info.png#id=info" class="icon" /></a></li>
-					<li><a href="index.html"><img src="images/icons/print.png" class="icon" /></a></li>
+					<li><a href="index.html#info"><img src="images/icons/info.png" class="icon" /></a></li>
+					<li><a href="index.html#basic"><img src="images/icons/print.png" class="icon" /></a></li>
 					<li><a href="index.html"><img src="images/icons/input.png" class="icon" /></a></li>
 					<li><a href="index.html"><img src="images/icons/scroll.png" class="icon" /></a></li>
 					<li><a href="index.html"><img src="images/icons/palette.png" class="icon" /></a></li>
@@ -58,17 +58,17 @@
 
 					<div class="view"><button type="button" class="view_button" onclick="viewA1P3()">View Output</button></div><br />
 				</div>
-                <div class="code_terminal">
+				<div class="code_terminal">
 					<b class="version">Python 3.8.5</b>
 					<b class="date">14/09/20</b>
 
-                    <p class="code" id="terminalA">
-                        <span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
-                    </p>
+					<p class="code" id="terminalA">
+						<span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
+					</p>
 
-                    <div class="copy_code"><button type="button" class="view_button" onclick="copyCodeA()">Copy Code</button></div>
-                    <div class="fullscreen"><!-- Run mode--></div>
-                </div>
+					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeA()">Copy Code</button></div>
+					<div class="fullscreen"><a href="fullscreen_a1.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				</div>
 			</article>
 
 			<article id="basic">
@@ -104,12 +104,53 @@
 					</p>
 
 					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeB()">Copy Code</button></div>
-					<div class="fullscreen"><!-- Run mode--></div>
+					<div class="fullscreen"><a href="fullscreen_a2.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				</div>
+			</article>
+
+			<article id="input">
+				<h2><b>Inputs |</b> <i>For interactivity!</i></h2>
+
+				<div class="text">
+
+					<img src="images/icons/border.png" class="top_border" />
+					<img src="images/icons/border.png" class="bottom_border" />
+
+					<p>
+						A good program needs to have user input, so this is where the input statement comes in handy. The code <span class="variable">value</span> = <span class="exec">input</span>(<span class="string">""</span>)
+						will allow the user to type in something, and after clicking enter it will save this input to the "<span class="variable">value</span>" variable.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA3P1()">View Input</button></div><br />
+
+					<p>
+						However, the input will always return a string. To change this, type <span class="exec">int</span>() around the <span class="exec">input</span>() function. This will force the string to change to a variable.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA3P2()">View Int</button></div><br />
+
+					<p>
+						But, if the user doesn't input a number, and you force it to become one, this will crash the program. To fix this, add <span class="function">try</span>: and <span class="function">except</span>: around
+						the code. This will prevent any errors.
+					</p>
+
+					<div class="view"><button type="button" class="view_button" onclick="viewA3P3()">View Try</button></div><br />
+				</div>
+				<div class="code_terminal">
+					<b class="version">Python 3.8.5</b>
+					<b class="date">14/09/20</b>
+
+					<p class="code" id="terminalC">
+						<span class="comment"># Input</span><br /><br />
+					</p>
+
+					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeC()">Copy Code</button></div>
+					<div class="fullscreen"><a href="fullscreen_a3.html"><button type="button" class="view_button">Fullscreen</button></a></div>
 				</div>
 			</article>
 		</main>
 
-		<input type="text" value="bello World" id="copying"> <!-- Copy and paste code, no touchy-->
+		<input type="text" value="" id="copying"> <!-- Copy and paste code, no touchy-->
 
 	</body> 
 
@@ -203,5 +244,57 @@
         document.getElementById("terminalB").innerHTML = `<span class="comment"># Basic printing</span><br /><br />
 						<span class="exec">print</span>(<span class="string">"Hello World!"</span>)`;
         A2P = 1;
+	}
+
+    function copyCodeC() {
+        var copyText = document.getElementById("copying");
+
+        switch (A3P) {
+            case 0:
+                copyText.value = '# Input';
+                break;
+
+            case 1:
+                copyText.value = 'cats = input("Amount of cats: ")';
+                break;
+
+            case 2:
+                copyText.value = `cats = int(input("Amount of cats: "))`;
+                break;
+
+            case 3:
+                copyText.value = `try: cats = int(input("Amount of cats: ")); except: cats = 0;`;
+                break;
+
+            default:
+                copyText.value = '';
+                break;
+        }
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        document.execCommand("copy");
+    }
+
+    function viewA3P1() {
+        document.getElementById("terminalC").innerHTML = `<span class="comment"># Input</span><br /><br />
+						<span class="variable">cats</span> = <span class="exec">input</span>(<span class="string">"Amount of cats: "</span>)`;
+        A3P = 1;
+    }
+
+    function viewA3P2() {
+        document.getElementById("terminalC").innerHTML = `<span class="comment"># Input</span><br /><br />
+						<span class="variable">cats</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"Amount of cats: "</span>))`;
+        A3P = 2;
+    }
+
+    function viewA3P3() {
+        document.getElementById("terminalC").innerHTML = `<span class="comment"># Input</span><br /><br />
+						<span class="function">try</span>:<br />
+						&emsp;&emsp;<span class="variable">cats</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"Amount of cats: "</span>))<br />
+						<span class="function">except</span>:<br />
+						&emsp;&emsp;<span class="variable">cats</span> = <span class="exec">0</span><br />`;
+        A3P = 3;
     }
 </script>

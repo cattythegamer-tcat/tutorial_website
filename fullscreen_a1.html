@@ -1,0 +1,51 @@
+﻿<!doctype html>
+
+<html lang="en">
+    <head>
+
+	    <meta charset="utf-8">
+
+	    <title>Fullscreen</title>
+
+	    <meta name="description" content="Python Printing">
+
+	    <link href="css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main>
+            <div class="code_terminal_full">
+                <b class="version">Python 3.8.5</b>
+                <b class="date_full">14/09/20</b>
+
+                <p class="code" id="terminalA">
+                    <span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
+                    <span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />
+                    <span class="function">if </span><span class="variable">pan_of_the_cake </span> > 1000:<br />
+                    <span class="exec">&emsp;&emsp;print</span>(<span class="string">"Thats a lot'a pancakes"</span>)
+                </p>
+
+                <div class="copy_code"><button type="button" class="view_button" onclick="copyCode()">Copy Code</button></div>
+                <div class="fullscreen"><a href="index.html"><button type="button" class="view_button">Back</button></a></div>
+
+            </div>
+        </main>
+
+        <input type="text" value="" id="copying"> <!-- Copy and paste code, no touchy-->
+
+    </body>
+</html>
+
+<script>
+    function copyCode() {
+        var copyText = document.getElementById("copying");
+
+        copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: print("Thats a lot'a pancakes");`;
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        document.execCommand("copy");
+    }
+</script>

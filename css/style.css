@@ -56,10 +56,10 @@ li:hover{
     z-index: 100;
 }
 
-body{
-    background-color:black;
-    color:#FFFFF0;
-    margin:0 auto;
+body {
+    background-color: #0F0F0F;
+    color: #FFFFF0;
+    margin: 0 auto;
 }
 
 article {
@@ -91,6 +91,12 @@ h2 {
     border-style: solid;
     height: 400px;
 }
+
+.code_terminal_full {
+    width: 100%;
+    background-color: black;
+}
+
 
 #title{
     text-align:center;
@@ -128,6 +134,12 @@ i{
 .date {
     float: right;
     color: #BA2343;
+}
+
+.date_full {
+    float: left;
+    color: #BA2343;
+    margin-left: 100px;
 }
 
 .code{
@@ -174,4 +186,13 @@ i{
     margin-top: 400px;
     width: 2.5%;
     transform: rotate(180deg);
+}
+
+.fullscreen {
+    float:left;
+    margin-left: 25px;
+}
+
+.copy_code {
+    float:left;
 }
