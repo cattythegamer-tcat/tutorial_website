@@ -22,7 +22,7 @@
 					<li><a href="index.html#basic"><img src="images/icons/print.png" class="icon" /></a></li>
 					<li><a href="index.html#input"><img src="images/icons/input.png" class="icon" /></a></li>
 					<li><a href="index.html#scroll"><img src="images/icons/scroll.png" class="icon" /></a></li>
-					<li><a href="index.html"><img src="images/icons/palette.png" class="icon" /></a></li>
+					<li><a href="index.html#color"><img src="images/icons/palette.png" class="icon" /></a></li>
 				</ul>
 			</div>
 		<main>
@@ -215,18 +215,18 @@
 						The other available colors are red and yellow, entered by changing <span class="string">"STRING"</span> to <span class="string">"COMMENT"</span> or <span class="string">"KEYWORD"</span> respectively.
 </p>
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA4P3()">View Alt</button></div><br />
+					<div class="view"><button type="button" class="view_button" onclick="viewA5P3()">View Alt</button></div><br />
 				</div>
 				<div class="code_terminal">
 					<b class="version">Python 3.8.5</b>
 					<b class="date">14/09/20</b>
 
-					<p class="code" id="terminalD">
-						<span class="comment"># Scroll</span><br /><br />
+					<p class="code" id="terminalE">
+						<span class="comment"># Color</span><br /><br />
 					</p>
 
-					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeD()">Copy Code</button></div>
-					<div class="fullscreen"><a href="fullscreen_a4.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeE()">Copy Code</button></div>
+					<div class="fullscreen"><a href="fullscreen_a5.html"><button type="button" class="view_button">Fullscreen</button></a></div>
 				</div>
 			</article>
 		</main>
@@ -415,7 +415,7 @@
 						<span class="function">import </span>time<br /><br />
 						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
 						&emsp;&emsp;<span class="function">pass</span>`;
-        A3P = 1;
+        A4P = 1;
     }
 
     function viewA4P2() {
@@ -423,7 +423,7 @@
 						<span class="function">import </span>time<br /><br />
 						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
 						&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)`;
-        A3P = 2;
+        A4P = 2;
     }
 
     function viewA4P3() {
@@ -432,6 +432,57 @@
 						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
 						&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)<br />
 						&emsp;&emsp;time.<span class="exec">sleep</span>(<span class="exec">0.1</span>)`;
-        A3P = 3;
+        A4P = 3;
+	}
+
+    function copyCodeE() {
+        var copyText = document.getElementById("copying");
+
+        switch (A5P) {
+            case 0:
+                copyText.value = '# Color';
+                break;
+
+            case 1:
+                copyText.value = 'import sys';
+                break;
+
+            case 2:
+                copyText.value = `import sys; sys.stdout.shell.write("Mangos", "STRING");`;
+                break;
+
+            case 3:
+                copyText.value = `import sys; sys.stdout.shell.write("Mangos", "COMMENT");`;
+                break;
+
+            default:
+                copyText.value = '';
+                break;
+        }
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        document.execCommand("copy");
+    }
+
+    function viewA5P1() {
+        document.getElementById("terminalE").innerHTML = `<span class="comment"># Color</span><br /><br />
+						<span class="function">import </span>sys<br /><br />`;
+        A5P = 1;
+    }
+
+    function viewA5P2() {
+        document.getElementById("terminalE").innerHTML = `<span class="comment"># Color</span><br /><br />
+						<span class="function">import </span>sys<br /><br />
+						sys.stdout.shell.write(<span class="string">"Mangos"</span>, <span class="string">"STRING"</span>)`;
+        A5P = 2;
+    }
+
+    function viewA5P3() {
+        document.getElementById("terminalE").innerHTML = `<span class="comment"># Color</span><br /><br />
+						<span class="function">import </span>sys<br /><br />
+						sys.stdout.shell.write(<span class="string">"Mangos"</span>, <span class="string">"COMMENT"</span>)`;
+        A5P = 3;
     }
 </script>
