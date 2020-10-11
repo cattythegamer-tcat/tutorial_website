@@ -1,493 +1,614 @@
-﻿<!DOCTYPE html> 
-
-<html lang="en"> 
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-
 	<meta charset="utf-8">
-
-	<title>Python Printing</title>
-
+	<title>
+		Python Printing
+	</title>
 	<meta name="description" content="Python Printing">
-
 	<link href="css/style.css" rel="stylesheet">
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="jquery/jquery.fittext.js"></script>
-
-</head> 
-
-	<body>
-		<div id="menu">
-				<ul>
-					<li><a href="index.html"><img src="images/icons/home.png" class="icon" /></a></li>
-					<li><a href="index.html#info"><img src="images/icons/info.png" class="icon" /></a></li>
-					<li><a href="index.html#basic"><img src="images/icons/print.png" class="icon" /></a></li>
-					<li><a href="index.html#input"><img src="images/icons/input.png" class="icon" /></a></li>
-					<li><a href="index.html#scroll"><img src="images/icons/scroll.png" class="icon" /></a></li>
-					<li><a href="index.html#color"><img src="images/icons/palette.png" class="icon" /></a></li>
-				</ul>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+	</script>
+	<script src="jquery/jquery.fittext.js">
+	</script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li>
+				<a href="index.html">
+					<img src="images/icons/home.png"
+						 class="icon" alt="#########">
+				</a>
+			</li>
+			<li>
+				<a href="index.html#info">
+					<img src="images/icons/info.png" class="icon" alt="#########">
+				</a>
+			</li>
+			<li>
+				<a href="index.html#basic">
+					<img src="images/icons/print.png" class="icon" alt="#########">
+				</a>
+			</li>
+			<li>
+				<a href="index.html#input">
+					<img src="images/icons/input.png" class="icon" alt="#########">
+				</a>
+			</li>
+			<li>
+				<a href="index.html#scroll">
+					<img src="images/icons/scroll.png" class="icon" alt="#########">
+				</a>
+			</li>
+			<li>
+				<a href="index.html#color">
+					<img src="images/icons/palette.png" class="icon" alt="#########">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<main>
+		<div>
+			<h1 id="title">
+				Python Printing
+			</h1><img src="images/backgrounds/code_stream.jpg" id="main_image" alt="#########">
+		</div>
+		<article id="info">
+			<h2>
+				<b>Information |</b> <i>... What is this?</i>
+			</h2>
+			<div class="text">
+				<img src="images/icons/border.png" class="top_border"
+					 alt="#########"> <img src="images/icons/border.png"
+								 class="bottom_border" alt="#########">
+				<p>
+					This website was built to teach Y11 about the different
+					Python Printing techniques. The following button will
+					display the first part of the example code.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA1P1()">
+						View Input
+					</button>
+				</div><br>
+				<p>
+					It will cover printing, inputs, stylized printing,
+					custom colors and some history. The following button
+					will display the second part of the example code.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA1P2()">
+						View If/else
+					</button>
+				</div><br>
+				<p>
+					Python printing was made as a Y12 DTM project. The
+					following button will show the completed version of the
+					example code.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA1P3()">
+						View Output
+					</button>
+				</div><br>
 			</div>
-		<main>
-			<div>
-				<h1 id="title">Python Printing</h1>
-				<img src="images/backgrounds/code_stream.jpg" id="main_image" />
+			<div class="code_terminal">
+				<b class="version">Python 3.8.5</b> <b class="date">14/09/20</b>
+				<p class="code" id="terminalA">
+					<span class="comment">
+						# This is a demo of the code<br>
+						# terminal.
+					</span><br>
+					<br>
+				</p>
+				<div class="copy_code">
+					<button type="button" class="view_button" onclick="copyCodeA()">
+						Copy Code
+					</button>
+				</div>
+				<div class="fullscreen">
+					<a href="fullscreen_a1.html">
+						<button type="button"
+								class="view_button">
+							Fullscreen
+						</button>
+					</a>
+				</div>
 			</div>
-
-			<article id="info">
-				<h2><b>Information |</b> <i>... What is this?</i></h2>
-
-				<div class="text">
-
-					<img src="images/icons/border.png" class="top_border" />
-					<img src="images/icons/border.png" class="bottom_border" />
-
-					<p>
-						This website was built to teach Y11 about the different Python Printing techniques. The following button will display the first part of the example code.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA1P1()">View Input</button></div><br />
-
-					<p>
-						It will cover printing, inputs, stylized printing, custom colors and some history. The following button will display the second part of the example code.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA1P2()">View If/else</button></div><br />
-
-					<p>
-						Python printing was made as a Y12 DTM project. The following button will show the completed version of the example code.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA1P3()">View Output</button></div><br />
+		</article>
+		<article id="basic">
+			<h2>
+				<b>Printing |</b> <i>How does one python?</i>
+			</h2>
+			<div class="text">
+				<img src="images/icons/border.png" class="top_border"
+					 alt="#########"> <img src="images/icons/border.png"
+								 class="bottom_border" alt="#########">
+				<p>
+					In python, one of the most basic functions is the print
+					statement.
+				</p>
+				<p>
+					To use it, you type <span class="exec">print</span>(<span class="string">"TEXT"</span>), replacing TEXT with the phrase
+					of your choosing.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA2P1()">
+						View Print
+					</button>
+				</div><br>
+				<p>
+					When run, it will display the chosen text in the
+					terminal.
+				</p>
+			</div>
+			<div class="code_terminal">
+				<b class="version">Python 3.8.5</b> <b class="date">14/09/20</b>
+				<p class="code" id="terminalB">
+					<span class="comment"># Basic printing</span><br>
+					<br>
+				</p>
+				<div class="copy_code">
+					<button type="button" class="view_button" onclick="copyCodeB()">
+						Copy Code
+					</button>
 				</div>
-				<div class="code_terminal">
-					<b class="version">Python 3.8.5</b>
-					<b class="date">14/09/20</b>
-
-					<p class="code" id="terminalA">
-						<span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
-					</p>
-
-					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeA()">Copy Code</button></div>
-					<div class="fullscreen"><a href="fullscreen_a1.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				<div class="fullscreen">
+					<a href="fullscreen_a2.html">
+						<button type="button"
+								class="view_button">
+							Fullscreen
+						</button>
+					</a>
 				</div>
-			</article>
-
-			<article id="basic">
-				<h2><b>Printing |</b> <i>How does one python?</i></h2>
-
-				<div class="text">
-
-					<img src="images/icons/border.png" class="top_border" />
-					<img src="images/icons/border.png" class="bottom_border" />
-
-					<p>
-						In python, one of the most basic functions is the print statement.
-					</p>
-
-					<p>
-						To use it, you type <span class="exec">print</span>(<span class="string">"TEXT"</span>), replacing TEXT with the phrase
-						of your choosing.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA2P1()">View Print</button></div><br />
-
-					<p>
-						When run, it will display the chosen text in the terminal.
-					</p>
-
+			</div>
+		</article>
+		<article id="input">
+			<h2>
+				<b>Inputs |</b> <i>For interactivity!</i>
+			</h2>
+			<div class="text">
+				<img src="images/icons/border.png" class="top_border"
+					 alt="#########"> <img src="images/icons/border.png"
+								 class="bottom_border" alt="#########">
+				<p>
+					A good program needs to have user input, so this is
+					where the input statement comes in handy. The code
+					<span class="variable">value</span> = <span class="exec">input</span>(<span class="string">""</span>)
+					will allow the user to type in something, and after
+					clicking enter it will save this input to the
+					"<span class="variable">value</span>" variable.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA3P1()">
+						View Input
+					</button>
+				</div><br>
+				<p>
+					However, the input will always return a string. To
+					change this, type <span class="exec">int</span>()
+					around the <span class="exec">input</span>() function.
+					This will force the string to change to a variable.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA3P2()">
+						View Int
+					</button>
+				</div><br>
+				<p>
+					But, if the user doesn't input a number, and you force
+					it to become one, this will crash the program. To fix
+					this, add <span class="function">try</span>: and
+					<span class="function">except</span>: around the code.
+					This will prevent any errors.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA3P3()">
+						View Try
+					</button>
+				</div><br>
+			</div>
+			<div class="code_terminal">
+				<b class="version">Python 3.8.5</b> <b class="date">14/09/20</b>
+				<p class="code" id="terminalC">
+					<span class="comment"># Input</span><br>
+					<br>
+				</p>
+				<div class="copy_code">
+					<button type="button" class="view_button" onclick="copyCodeC()">
+						Copy Code
+					</button>
 				</div>
-				<div class="code_terminal">
-					<b class="version">Python 3.8.5</b>
-					<b class="date">14/09/20</b>
-
-					<p class="code" id="terminalB">
-						<span class="comment"># Basic printing</span><br /><br />
-					</p>
-
-					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeB()">Copy Code</button></div>
-					<div class="fullscreen"><a href="fullscreen_a2.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				<div class="fullscreen">
+					<a href="fullscreen_a3.html">
+						<button type="button"
+								class="view_button">
+							Fullscreen
+						</button>
+					</a>
 				</div>
-			</article>
-
-			<article id="input">
-				<h2><b>Inputs |</b> <i>For interactivity!</i></h2>
-
-				<div class="text">
-
-					<img src="images/icons/border.png" class="top_border" />
-					<img src="images/icons/border.png" class="bottom_border" />
-
-					<p>
-						A good program needs to have user input, so this is where the input statement comes in handy. The code <span class="variable">value</span> = <span class="exec">input</span>(<span class="string">""</span>)
-						will allow the user to type in something, and after clicking enter it will save this input to the "<span class="variable">value</span>" variable.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA3P1()">View Input</button></div><br />
-
-					<p>
-						However, the input will always return a string. To change this, type <span class="exec">int</span>() around the <span class="exec">input</span>() function. This will force the string to change to a variable.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA3P2()">View Int</button></div><br />
-
-					<p>
-						But, if the user doesn't input a number, and you force it to become one, this will crash the program. To fix this, add <span class="function">try</span>: and <span class="function">except</span>: around
-						the code. This will prevent any errors.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA3P3()">View Try</button></div><br />
+			</div>
+		</article>
+		<article id="scroll">
+			<h2>
+				<b>Scroll'n |</b> <i>Stylize your printing</i>
+			</h2>
+			<div class="text">
+				<img src="images/icons/border.png" class="top_border"
+					 alt="#########"> <img src="images/icons/border.png"
+								 class="bottom_border" alt="#########">
+				<p>
+					If you want to go the extra mile, try stylized
+					scrolling. To do this, you first type <span class="function">import</span> time. Then, you add
+					<span class="function">for</span> l <span class="function">in</span> <span class="string">"VALUE"</span>:, changing VALUE to the desired
+					output.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA4P1()">
+						View Import
+					</button>
+				</div><br>
+				<p>
+					Inside the <span class="function">for</span> loop, type
+					<span class="exec">print</span>(l, end=<span class="string">""</span>). This will print out individual
+					letters, without goint to a new line each time.
+					However, this will only work on python version 3 or
+					higher.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA4P2()">
+						View Print
+					</button>
+				</div><br>
+				<p>
+					Lastly, while still inside the <span class="function">for</span> loop, type time.<span class="exec">sleep</span>(<span class="exec">0.1</span>). You
+					can change the number to adjust the speed of the
+					scrolling, in seconds. Keep in mind, this should only
+					be used in certain cases, as an entire program using
+					this would make navigating take ages.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA4P3()">
+						View Time
+					</button>
+				</div><br>
+			</div>
+			<div class="code_terminal">
+				<b class="version">Python 3.8.5</b> <b class="date">14/09/20</b>
+				<p class="code" id="terminalD">
+					<span class="comment"># Scroll</span><br>
+					<br>
+				</p>
+				<div class="copy_code">
+					<button type="button" class="view_button" onclick="copyCodeD()">
+						Copy Code
+					</button>
 				</div>
-				<div class="code_terminal">
-					<b class="version">Python 3.8.5</b>
-					<b class="date">14/09/20</b>
-
-					<p class="code" id="terminalC">
-						<span class="comment"># Input</span><br /><br />
-					</p>
-
-					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeC()">Copy Code</button></div>
-					<div class="fullscreen"><a href="fullscreen_a3.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				<div class="fullscreen">
+					<a href="fullscreen_a4.html">
+						<button type="button"
+								class="view_button">
+							Fullscreen
+						</button>
+					</a>
 				</div>
-			</article>
-
-			<article id="scroll">
-				<h2><b>Scroll'n |</b> <i>Stylize your printing</i></h2>
-
-				<div class="text">
-
-					<img src="images/icons/border.png" class="top_border" />
-					<img src="images/icons/border.png" class="bottom_border" />
-
-					<p>
-						If you want to go the extra mile, try stylized scrolling. To do this, you first type <span class="function">import</span> time. Then, you add <span class="function">for </span> l <span class="function">in </span>
-						<span class="string">"VALUE"</span>:, changing VALUE to the desired output.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA4P1()">View Import</button></div><br />
-
-					<p>
-						Inside the <span class="function">for</span> loop, type <span class="exec">print</span>(l, end=<span class="string">""</span>). This will print out individual letters, without goint to a new line each time.
-						However, this will only work on python version 3 or higher.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA4P2()">View Print</button></div><br />
-
-					<p>
-						Lastly, while still inside the <span class="function">for</span> loop, type time.<span class="exec">sleep</span>(<span class="exec">0.1</span>). You can change the number to adjust the speed of the scrolling, in seconds.
-						Keep in mind, this should only be used in certain cases, as an entire program using this would make navigating take ages.
-					</p>
-
-					<div class="view"><button type="button" class="view_button" onclick="viewA4P3()">View Time</button></div><br />
+			</div>
+		</article>
+		<article id="color">
+			<h2>
+				<b>Color |</b> <i>Change your printing color :O</i>
+			</h2>
+			<div class="text">
+				<img src="images/icons/border.png" class="top_border"
+					 alt="#########"> <img src="images/icons/border.png"
+								 class="bottom_border" alt="#########">
+				<p>
+					To change the color of the output, first <span class="function">import</span> sys. This will give you access
+					to the python core programs.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA5P1()">
+						View Sys
+					</button>
+				</div><br>
+				<p>
+					After this, type sys.stdout.shell.write(<span class="string">"OUTPUT"</span>, <span class="string">"STRING"</span>), changing OUTPUT to whatever
+					you want. This will print the output as green.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA5P2()">
+						View write
+					</button>
+				</div><br>
+				<p>
+					The other available colors are red and yellow, entered
+					by changing <span class="string">"STRING"</span> to
+					<span class="string">"COMMENT"</span> or <span class="string">"KEYWORD"</span> respectively.
+				</p>
+				<div class="view">
+					<button type="button" class="view_button" onclick="viewA5P3()">
+						View Alt
+					</button>
+				</div><br>
+			</div>
+			<div class="code_terminal">
+				<b class="version">Python 3.8.5</b> <b class="date">14/09/20</b>
+				<p class="code" id="terminalE">
+					<span class="comment"># Color</span><br>
+					<br>
+				</p>
+				<div class="copy_code">
+					<button type="button" class="view_button" onclick="copyCodeE()">
+						Copy Code
+					</button>
 				</div>
-				<div class="code_terminal">
-					<b class="version">Python 3.8.5</b>
-					<b class="date">14/09/20</b>
-
-					<p class="code" id="terminalD">
-						<span class="comment"># Scroll</span><br /><br />
-					</p>
-
-					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeD()">Copy Code</button></div>
-					<div class="fullscreen"><a href="fullscreen_a4.html"><button type="button" class="view_button">Fullscreen</button></a></div>
+				<div class="fullscreen">
+					<a href="fullscreen_a5.html">
+						<button type="button"
+								class="view_button">
+							Fullscreen
+						</button>
+					</a>
 				</div>
-			</article>
+			</div>
+		</article>
+	</main>
+	<form>
+		<input type="text" value="" id="copying">
+		<!-- Copy and paste code, no touchy-->
 
-			<article id="color">
-				<h2><b>Color |</b> <i>Change your printing color :O</i></h2>
+		<script>
+			jQuery("#title").fitText();
 
-				<div class="text">
+			var A1P = 0;
+			var A2P = 0;
+			var A3P = 0;
+			var A4P = 0;
+			var A5P = 0;
+			var A6P = 0;
 
-					<img src="images/icons/border.png" class="top_border" />
-					<img src="images/icons/border.png" class="bottom_border" />
+			function copyCodeA() {
+				var copyText = document.getElementById("copying");
 
-					<p>
-						To change the color of the output, first <span class="function">import </span> sys. This will give you access to the python core programs.
-					</p>
+				switch (A1P) {
+					case 0:
+						copyText.value = '# demo';
+						break;
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA5P1()">View Sys</button></div><br />
+					case 1:
+						copyText.value = 'pan_of_the_cake = int(input("am: "))';
+						break;
 
-					<p>
-						After this, type sys.stdout.shell.write(<span class="string">"OUTPUT"</span>, <span class="string">"STRING"</span>), changing OUTPUT to whatever you want. This will
-						print the output as green.
-					</p>
+					case 2:
+						copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: pass;`;
+						break;
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA5P2()">View write</button></div><br />
+					case 3:
+						copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: print("Thats a lot'a pancakes");`;
+						break;
 
-					<p>
-						The other available colors are red and yellow, entered by changing <span class="string">"STRING"</span> to <span class="string">"COMMENT"</span> or <span class="string">"KEYWORD"</span> respectively.
-</p>
+					default:
+						copyText.value = '';
+						break;
+				}
 
-					<div class="view"><button type="button" class="view_button" onclick="viewA5P3()">View Alt</button></div><br />
-				</div>
-				<div class="code_terminal">
-					<b class="version">Python 3.8.5</b>
-					<b class="date">14/09/20</b>
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
 
-					<p class="code" id="terminalE">
-						<span class="comment"># Color</span><br /><br />
-					</p>
+				document.execCommand("copy");
+			}
 
-					<div class="copy_code"><button type="button" class="view_button" onclick="copyCodeE()">Copy Code</button></div>
-					<div class="fullscreen"><a href="fullscreen_a5.html"><button type="button" class="view_button">Fullscreen</button></a></div>
-				</div>
-			</article>
-		</main>
+			function viewA1P1() {
+				document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.<\/span><br /><br />
+								<span class="variable">pan_of_the_cake<\/span> = <span class="exec">int<\/span>(<span class="exec">input<\/span>(<span class="string">"am: "<\/span>)) <br /><br />`;
+				A1P = 1;
+			}
 
-		<input type="text" value="" id="copying"> <!-- Copy and paste code, no touchy-->
+			function viewA1P2() {
+				document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.<\/span><br /><br />
+														<span class="variable">pan_of_the_cake<\/span> = <span class="exec">int<\/span>(<span class="exec">input<\/span>(<span class="string">"am: "<\/span>)) <br /><br />
+														<span class="function">if <\/span><span class="variable">pan_of_the_cake <\/span> > 1000:<br />
+														<span class="function">&emsp;&emsp;pass<\/span>`;
+				A1P = 2;
+			}
 
-	</body> 
+			function viewA1P3() {
+				document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.<\/span><br /><br />
+														<span class="variable">pan_of_the_cake<\/span> = <span class="exec">int<\/span>(<span class="exec">input<\/span>(<span class="string">"am: "<\/span>)) <br /><br />
+														<span class="function">if <\/span><span class="variable">pan_of_the_cake <\/span> > 1000:<br />
+														<span class="exec">&emsp;&emsp;print<\/span>(<span class="string">"Thats a lot'a pancakes"<\/span>)`;
+				A1P = 3;
+			}
 
+			function copyCodeB() {
+				var copyText = document.getElementById("copying");
+
+				switch (A2P) {
+					case 0:
+						copyText.value = '# Basic printing';
+						break;
+
+					case 1:
+						copyText.value = 'print("hello world")';
+						break;
+
+					default:
+						copyText.value = '';
+						break;
+				}
+
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
+
+				document.execCommand("copy");
+			}
+
+			function viewA2P1() {
+				document.getElementById("terminalB").innerHTML = `<span class="comment"># Basic printing<\/span><br /><br />
+														<span class="exec">print<\/span>(<span class="string">"Hello World!"<\/span>)`;
+				A2P = 1;
+			}
+
+			function copyCodeC() {
+				var copyText = document.getElementById("copying");
+
+				switch (A3P) {
+					case 0:
+						copyText.value = '# Input';
+						break;
+
+					case 1:
+						copyText.value = 'cats = input("Amount of cats: ")';
+						break;
+
+					case 2:
+						copyText.value = `cats = int(input("Amount of cats: "))`;
+						break;
+
+					case 3:
+						copyText.value = `try: cats = int(input("Amount of cats: ")); except: cats = 0;`;
+						break;
+
+					default:
+						copyText.value = '';
+						break;
+				}
+
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
+
+				document.execCommand("copy");
+			}
+
+			function viewA3P1() {
+				document.getElementById("terminalC").innerHTML = `<span class="comment"># Input<\/span><br /><br />
+														<span class="variable">cats<\/span> = <span class="exec">input<\/span>(<span class="string">"Amount of cats: "<\/span>)`;
+				A3P = 1;
+			}
+
+			function viewA3P2() {
+				document.getElementById("terminalC").innerHTML = `<span class="comment"># Input<\/span><br /><br />
+														<span class="variable">cats<\/span> = <span class="exec">int<\/span>(<span class="exec">input<\/span>(<span class="string">"Amount of cats: "<\/span>))`;
+				A3P = 2;
+			}
+
+			function viewA3P3() {
+				document.getElementById("terminalC").innerHTML = `<span class="comment"># Input<\/span><br /><br />
+														<span class="function">try<\/span>:<br />
+														&emsp;&emsp;<span class="variable">cats<\/span> = <span class="exec">int<\/span>(<span class="exec">input<\/span>(<span class="string">"Amount of cats: "<\/span>))<br />
+														<span class="function">except<\/span>:<br />
+														&emsp;&emsp;<span class="variable">cats<\/span> = <span class="exec">0<\/span><br />`;
+				A3P = 3;
+			}
+
+			function copyCodeD() {
+				var copyText = document.getElementById("copying");
+
+				switch (A4P) {
+					case 0:
+						copyText.value = '# Scroll';
+						break;
+
+					case 1:
+						copyText.value = 'cats = input("Amount of cats: ")';
+						break;
+
+					case 2:
+						copyText.value = `cats = int(input("Amount of cats: "))`;
+						break;
+
+					case 3:
+						copyText.value = `try: cats = int(input("Amount of cats: ")); except: cats = 0;`;
+						break;
+
+					default:
+						copyText.value = '';
+						break;
+				}
+
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
+
+				document.execCommand("copy");
+			}
+
+			function viewA4P1() {
+				document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll<\/span><br /><br />
+														<span class="function">import <\/span>time<br /><br />
+														<span class="function">for<\/span> <span class="variable">l<\/span> <span class="function">in<\/span> <span class="string">"Potato"<\/span>:<br />
+														&emsp;&emsp;<span class="function">pass<\/span>`;
+				A4P = 1;
+			}
+
+			function viewA4P2() {
+				document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll<\/span><br /><br />
+														<span class="function">import <\/span>time<br /><br />
+														<span class="function">for<\/span> <span class="variable">l<\/span> <span class="function">in<\/span> <span class="string">"Potato"<\/span>:<br />
+														&emsp;&emsp;<span class="exec">print<\/span>(<span class="variable">l<\/span>, end=<span class="string">""<\/span>)`;
+				A4P = 2;
+			}
+
+			function viewA4P3() {
+				document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll<\/span><br /><br />
+														<span class="function">import <\/span>time<br /><br />
+														<span class="function">for<\/span> <span class="variable">l<\/span> <span class="function">in<\/span> <span class="string">"Potato"<\/span>:<br />
+														&emsp;&emsp;<span class="exec">print<\/span>(<span class="variable">l<\/span>, end=<span class="string">""<\/span>)<br />
+														&emsp;&emsp;time.<span class="exec">sleep<\/span>(<span class="exec">0.1<\/span>)`;
+				A4P = 3;
+			}
+
+			function copyCodeE() {
+				var copyText = document.getElementById("copying");
+
+				switch (A5P) {
+					case 0:
+						copyText.value = '# Color';
+						break;
+
+					case 1:
+						copyText.value = 'import sys';
+						break;
+
+					case 2:
+						copyText.value = `import sys; sys.stdout.shell.write("Mangos", "STRING");`;
+						break;
+
+					case 3:
+						copyText.value = `import sys; sys.stdout.shell.write("Mangos", "COMMENT");`;
+						break;
+
+					default:
+						copyText.value = '';
+						break;
+				}
+
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
+
+				document.execCommand("copy");
+			}
+
+			function viewA5P1() {
+				document.getElementById("terminalE").innerHTML = `<span class="comment"># Color<\/span><br /><br />
+														<span class="function">import <\/span>sys<br /><br />`;
+				A5P = 1;
+			}
+
+			function viewA5P2() {
+				document.getElementById("terminalE").innerHTML = `<span class="comment"># Color<\/span><br /><br />
+														<span class="function">import <\/span>sys<br /><br />
+														sys.stdout.shell.write(<span class="string">"Mangos"<\/span>, <span class="string">"STRING"<\/span>)`;
+				A5P = 2;
+			}
+
+			function viewA5P3() {
+				document.getElementById("terminalE").innerHTML = `<span class="comment"># Color<\/span><br /><br />
+														<span class="function">import <\/span>sys<br /><br />
+														sys.stdout.shell.write(<span class="string">"Mangos"<\/span>, <span class="string">"COMMENT"<\/span>)`;
+				A5P = 3;
+			}
+		</script>
+	</form>
+</body>
 </html>
-
-<script>
-	jQuery("#title").fitText();
-
-	var A1P = 0;
-	var A2P = 0;
-	var A3P = 0;
-	var A4P = 0;
-	var A5P = 0;
-	var A6P = 0;
-
-	function copyCodeA() {
-        var copyText = document.getElementById("copying");
-
-		switch (A1P) {
-			case 0:
-				copyText.value = '# demo';
-				break;
-
-			case 1:
-                copyText.value = 'pan_of_the_cake = int(input("am: "))';
-				break;
-
-            case 2:
-                copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: pass;`;
-				break;
-
-            case 3:
-                copyText.value = `pan_of_the_cake = int(input("am: ")); if pan_of_the_cake > 1000: print("Thats a lot'a pancakes");`;
-				break;
-
-			default:
-				copyText.value = '';
-				break;
-        }
-
-		copyText.select();
-		copyText.setSelectionRange(0, 99999);
-
-        document.execCommand("copy");
-    }
-
-    function viewA1P1() {
-        document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
-                        <span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />`;
-		A1P = 1;
-    }
-
-    function viewA1P2() {
-        document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
-						<span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />
-						<span class="function">if </span><span class="variable">pan_of_the_cake </span> > 1000:<br />
-						<span class="function">&emsp;&emsp;pass</span>`;
-		A1P = 2;
-    }
-
-	function viewA1P3() {
-        document.getElementById("terminalA").innerHTML = `<span class="comment"># This is a demo of the code<br />#  terminal.</span><br /><br />
-						<span class="variable">pan_of_the_cake</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"am: "</span>)) <br /><br />
-						<span class="function">if </span><span class="variable">pan_of_the_cake </span> > 1000:<br />
-						<span class="exec">&emsp;&emsp;print</span>(<span class="string">"Thats a lot'a pancakes"</span>)`;
-		A1P = 3;
-	}
-
-	function copyCodeB() {
-		var copyText = document.getElementById("copying");
-
-		switch (A2P) {
-			case 0:
-				copyText.value = '# Basic printing';
-				break;
-
-			case 1:
-				copyText.value = 'print("hello world")';
-				break;
-
-			default:
-				copyText.value = '';
-				break;
-		}
-
-		copyText.select();
-		copyText.setSelectionRange(0, 99999);
-
-		document.execCommand("copy");
-    }
-
-    function viewA2P1() {
-        document.getElementById("terminalB").innerHTML = `<span class="comment"># Basic printing</span><br /><br />
-						<span class="exec">print</span>(<span class="string">"Hello World!"</span>)`;
-        A2P = 1;
-	}
-
-    function copyCodeC() {
-        var copyText = document.getElementById("copying");
-
-        switch (A3P) {
-            case 0:
-                copyText.value = '# Input';
-                break;
-
-            case 1:
-                copyText.value = 'cats = input("Amount of cats: ")';
-                break;
-
-            case 2:
-                copyText.value = `cats = int(input("Amount of cats: "))`;
-                break;
-
-            case 3:
-                copyText.value = `try: cats = int(input("Amount of cats: ")); except: cats = 0;`;
-                break;
-
-            default:
-                copyText.value = '';
-                break;
-        }
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-
-        document.execCommand("copy");
-    }
-
-    function viewA3P1() {
-        document.getElementById("terminalC").innerHTML = `<span class="comment"># Input</span><br /><br />
-						<span class="variable">cats</span> = <span class="exec">input</span>(<span class="string">"Amount of cats: "</span>)`;
-        A3P = 1;
-    }
-
-    function viewA3P2() {
-        document.getElementById("terminalC").innerHTML = `<span class="comment"># Input</span><br /><br />
-						<span class="variable">cats</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"Amount of cats: "</span>))`;
-        A3P = 2;
-    }
-
-    function viewA3P3() {
-        document.getElementById("terminalC").innerHTML = `<span class="comment"># Input</span><br /><br />
-						<span class="function">try</span>:<br />
-						&emsp;&emsp;<span class="variable">cats</span> = <span class="exec">int</span>(<span class="exec">input</span>(<span class="string">"Amount of cats: "</span>))<br />
-						<span class="function">except</span>:<br />
-						&emsp;&emsp;<span class="variable">cats</span> = <span class="exec">0</span><br />`;
-        A3P = 3;
-	}
-
-    function copyCodeD() {
-        var copyText = document.getElementById("copying");
-
-        switch (A4P) {
-            case 0:
-                copyText.value = '# Scroll';
-                break;
-
-            case 1:
-                copyText.value = 'cats = input("Amount of cats: ")';
-                break;
-
-            case 2:
-                copyText.value = `cats = int(input("Amount of cats: "))`;
-                break;
-
-            case 3:
-                copyText.value = `try: cats = int(input("Amount of cats: ")); except: cats = 0;`;
-                break;
-
-            default:
-                copyText.value = '';
-                break;
-        }
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-
-        document.execCommand("copy");
-    }
-
-    function viewA4P1() {
-        document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll</span><br /><br />
-						<span class="function">import </span>time<br /><br />
-						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
-						&emsp;&emsp;<span class="function">pass</span>`;
-        A4P = 1;
-    }
-
-    function viewA4P2() {
-        document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll</span><br /><br />
-						<span class="function">import </span>time<br /><br />
-						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
-						&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)`;
-        A4P = 2;
-    }
-
-    function viewA4P3() {
-        document.getElementById("terminalD").innerHTML = `<span class="comment"># Scroll</span><br /><br />
-						<span class="function">import </span>time<br /><br />
-						<span class="function">for</span> <span class="variable">l</span> <span class="function">in</span> <span class="string">"Potato"</span>:<br />
-						&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)<br />
-						&emsp;&emsp;time.<span class="exec">sleep</span>(<span class="exec">0.1</span>)`;
-        A4P = 3;
-	}
-
-    function copyCodeE() {
-        var copyText = document.getElementById("copying");
-
-        switch (A5P) {
-            case 0:
-                copyText.value = '# Color';
-                break;
-
-            case 1:
-                copyText.value = 'import sys';
-                break;
-
-            case 2:
-                copyText.value = `import sys; sys.stdout.shell.write("Mangos", "STRING");`;
-                break;
-
-            case 3:
-                copyText.value = `import sys; sys.stdout.shell.write("Mangos", "COMMENT");`;
-                break;
-
-            default:
-                copyText.value = '';
-                break;
-        }
-
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-
-        document.execCommand("copy");
-    }
-
-    function viewA5P1() {
-        document.getElementById("terminalE").innerHTML = `<span class="comment"># Color</span><br /><br />
-						<span class="function">import </span>sys<br /><br />`;
-        A5P = 1;
-    }
-
-    function viewA5P2() {
-        document.getElementById("terminalE").innerHTML = `<span class="comment"># Color</span><br /><br />
-						<span class="function">import </span>sys<br /><br />
-						sys.stdout.shell.write(<span class="string">"Mangos"</span>, <span class="string">"STRING"</span>)`;
-        A5P = 2;
-    }
-
-    function viewA5P3() {
-        document.getElementById("terminalE").innerHTML = `<span class="comment"># Color</span><br /><br />
-						<span class="function">import </span>sys<br /><br />
-						sys.stdout.shell.write(<span class="string">"Mangos"</span>, <span class="string">"COMMENT"</span>)`;
-        A5P = 3;
-    }
-</script>
