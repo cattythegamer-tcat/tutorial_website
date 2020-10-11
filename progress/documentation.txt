@@ -1,1 +1,2 @@
 Fixed bug where the code wasn't showing up in the terminal. I forgot to change the terminal id from terminalB to terminalC.
+Bug where if I decrease the size to much, the text glitches (capture 4)
