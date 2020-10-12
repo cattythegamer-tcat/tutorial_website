@@ -1,53 +1,61 @@
-﻿<!doctype html>
-
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8">
-
 	<title>Fullscreen</title>
-
 	<meta name="description" content="Python Printing">
-
 	<link href="css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
 	<main>
 		<div class="code_terminal_full">
 			<b class="version">Python 3.8.5</b>
 			<b class="date_full">14/09/20</b>
-
 			<p class="code" id="terminal4">
-				<span class="comment"># Scroll</span> <br /><br />
-				<span class="function">import </span>time<br /><br />
-				<span class="function">for</span><span class="variable"> l </span><span class="function">in</span>
-				<span class="string"> "Potato"</span>:<br />
-				&emsp;&emsp;<span class="exec">print</span>(<span class="variable">l</span>, end=<span class="string">""</span>)<br />
+				<span class="comment">
+					#
+					Scroll
+				</span><br>
+				<br>
+				<span class="function">import</span> time<br>
+				<br>
+				<span class="function">for</span> <span class="variable">l</span>
+				<span class="function">in</span> <span class="string">"Potato"</span>:<br>
+				<span class="exec">&emsp;&emsp;print</span>(<span class="variable">l</span>,
+				end=<span class="string">""</span>)<br>
 				&emsp;&emsp;time.<span class="exec">sleep</span>(<span class="exec">0.1</span>)
 			</p>
-
-			<div class="copy_code"><button type="button" class="view_button" onclick="copyCode()">Copy Code</button></div>
-			<div class="fullscreen"><a href="index.html#scroll"><button type="button" class="view_button">Back</button></a></div>
-
+			<div class="copy_code">
+				<button type="button" class="view_button"
+						onclick="copyCode()">
+					Copy Code
+				</button>
+			</div>
+			<div class="fullscreen">
+				<a href="index.html#scroll">
+					<button type="button" class="view_button">
+						Back
+					</button>
+				</a>
+			</div>
 		</div>
 	</main>
+	<form>
+		<input type="text" value="" id="copying">
+		<!-- Copy and paste code, no touchy-->
 
-	<input type="text" value="" id="copying"> <!-- Copy and paste code, no touchy-->
+		<script>
+			function copyCode() {
+				var copyText = document.getElementById("copying");
 
+				copyText.value = `import time; for l in "Potato": print(l, end=""); time.sleep(0.1);`;
+
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
+
+				document.execCommand("copy");
+			}
+		</script>
+	</form>
 </body>
 </html>
-
-<script>
-	function copyCode() {
-		var copyText = document.getElementById("copying");
-
-        copyText.value = `import time; for l in "Potato": print(l, end=""); time.sleep(0.1);`;
-
-		copyText.select();
-		copyText.setSelectionRange(0, 99999);
-
-		document.execCommand("copy");
-	}
-</script>

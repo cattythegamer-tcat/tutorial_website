@@ -1,50 +1,58 @@
-﻿<!doctype html>
-
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8">
-
 	<title>Fullscreen</title>
-
 	<meta name="description" content="Python Printing">
-
 	<link href="css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
 	<main>
 		<div class="code_terminal_full">
 			<b class="version">Python 3.8.5</b>
 			<b class="date_full">14/09/20</b>
-
 			<p class="code" id="terminalA">
-				<span class="comment"># Color</span><br /><br />
-				<span class="function">import </span>sys<br /><br />
-				sys.stdout.shell.write(<span class="string">"Mangos"</span>, <span class="string">"COMMENT"</span>)
+				<span class="comment">
+					#
+					Color
+				</span><br>
+				<br>
+				<span class="function">import</span> sys<br>
+				<br>
+				sys.stdout.shell.write(<span class="string">"Mangos"</span>,
+				<span class="string">"COMMENT"</span>)
 			</p>
-
-			<div class="copy_code"><button type="button" class="view_button" onclick="copyCode()">Copy Code</button></div>
-			<div class="fullscreen"><a href="index.html#color"><button type="button" class="view_button">Back</button></a></div>
-
+			<div class="copy_code">
+				<button type="button" class="view_button"
+						onclick="copyCode()">
+					Copy Code
+				</button>
+			</div>
+			<div class="fullscreen">
+				<a href="index.html#color">
+					<button type="button" class="view_button">
+						Back
+					</button>
+				</a>
+			</div>
 		</div>
 	</main>
+	<form>
+		<input type="text" value="" id="copying">
+		<!-- Copy and paste code, no touchy-->
 
-	<input type="text" value="" id="copying"> <!-- Copy and paste code, no touchy-->
+		<script>
+			function copyCode() {
+				var copyText = document.getElementById("copying");
 
+				copyText.value = `import sys; sys.stdout.shell.write("Mangos", "COMMENT");`;
+
+				copyText.select();
+				copyText.setSelectionRange(0, 99999);
+
+				document.execCommand("copy");
+			}
+		</script>
+	</form>
 </body>
 </html>
-
-<script>
-	function copyCode() {
-		var copyText = document.getElementById("copying");
-
-        copyText.value = `import sys; sys.stdout.shell.write("Mangos", "COMMENT");`;
-
-		copyText.select();
-		copyText.setSelectionRange(0, 99999);
-
-		document.execCommand("copy");
-	}
-</script>
